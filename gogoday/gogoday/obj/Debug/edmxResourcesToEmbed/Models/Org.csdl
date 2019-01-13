@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gogodayModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentId" />
+    </Key>
+    <Property Name="AgentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AgentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerCount" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+    <Property Name="AgentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="gogodayEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agent" EntityType="Self.Agent" />
+    <EntitySet Name="Company" EntityType="Self.Company" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" />
+    <EntitySet Name="CustomerVIPOrder" EntityType="gogodayModel.CustomerVIPOrder" />
+    <EntitySet Name="Student" EntityType="gogodayModel.Student" />
+    <EntitySet Name="Teacher" EntityType="gogodayModel.Teacher" />
+  </EntityContainer>
+  <EntityType Name="CustomerVIPOrder">
+    <Key>
+      <PropertyRef Name="CustomerVIPOrderId" />
+    </Key>
+    <Property Name="CustomerVIPOrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+    </Key>
+    <Property Name="TeacherId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

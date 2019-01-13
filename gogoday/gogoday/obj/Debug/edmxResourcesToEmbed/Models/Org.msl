@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gogodayModelStoreContainer" CdmEntityContainer="gogodayEntities">
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="IsTypeOf(gogodayModel.Agent)">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="AgentType" ColumnName="AgentType" />
+          <ScalarProperty Name="CustomerCount" ColumnName="CustomerCount" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="IsTypeOf(gogodayModel.Company)">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="IsTypeOf(gogodayModel.Customer)">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerVIPOrder">
+      <EntityTypeMapping TypeName="gogodayModel.CustomerVIPOrder">
+        <MappingFragment StoreEntitySet="CustomerVIPOrder">
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerVIPOrderId" ColumnName="CustomerVIPOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="gogodayModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teacher">
+      <EntityTypeMapping TypeName="gogodayModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

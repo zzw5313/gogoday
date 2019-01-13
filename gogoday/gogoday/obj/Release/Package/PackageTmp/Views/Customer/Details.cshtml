@@ -1,0 +1,50 @@
+﻿@model gogoday.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Customer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgentId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgentId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CustomerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

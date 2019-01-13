@@ -1,0 +1,13 @@
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\gogoday.dll
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\System.Web.Mvc.dll
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\EntityFramework.dll
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\gogoday.pdb
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\System.Web.Mvc.xml
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\EntityFramework.xml
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\张建勋\gogoday\UnitTestProject1\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\张建勋\gogoday\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\张建勋\gogoday\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\张建勋\gogoday\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

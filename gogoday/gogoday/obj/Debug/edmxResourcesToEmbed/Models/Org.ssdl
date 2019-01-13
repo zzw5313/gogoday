@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gogodayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentId" />
+    </Key>
+    <Property Name="AgentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="PCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgentType" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerCount" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgentCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CustomerVIPOrder">
+    <Key>
+      <PropertyRef Name="CustomerVIPOrderId" />
+    </Key>
+    <Property Name="CustomerVIPOrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="PCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+    </Key>
+    <Property Name="TeacherId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateTime" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="gogodayModelStoreContainer">
+    <EntitySet Name="Agent" EntityType="Self.Agent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerVIPOrder" EntityType="Self.CustomerVIPOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

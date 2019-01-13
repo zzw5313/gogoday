@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\gogoday</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/22/2018 19:00:59</publishTime>
+    </File>
+    <File Include="bin/gogoday.dll">
+      <publishTime>12/22/2018 23:32:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>12/08/2018 06:28:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/22/2018 18:59:41</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>12/22/2018 19:01:01</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Net.Http.resources.dll">
+      <publishTime>12/22/2018 18:59:43</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Net.Http.WebRequest.resources.dll">
+      <publishTime>12/22/2018 18:59:43</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>12/22/2018 18:59:42</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/22/2018 18:59:39</publishTime>
+    </File>
+    <File Include="Models/Org.edmx.diagram">
+      <publishTime>12/22/2018 23:31:15</publishTime>
+    </File>
+    <File Include="Models/Org.edmx.sql">
+      <publishTime>12/22/2018 23:29:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/22/2018 19:01:01</publishTime>
+    </File>
+    <File Include="Views/Agent/Create.cshtml">
+      <publishTime>12/22/2018 23:36:42</publishTime>
+    </File>
+    <File Include="Views/Agent/Delete.cshtml">
+      <publishTime>12/22/2018 23:37:27</publishTime>
+    </File>
+    <File Include="Views/Agent/Details.cshtml">
+      <publishTime>12/22/2018 23:37:39</publishTime>
+    </File>
+    <File Include="Views/Agent/Edit.cshtml">
+      <publishTime>12/22/2018 23:37:57</publishTime>
+    </File>
+    <File Include="Views/Agent/Index.cshtml">
+      <publishTime>12/22/2018 23:38:13</publishTime>
+    </File>
+    <File Include="Views/Company/Create.cshtml">
+      <publishTime>12/22/2018 19:14:06</publishTime>
+    </File>
+    <File Include="Views/Company/Delete.cshtml">
+      <publishTime>12/22/2018 19:02:47</publishTime>
+    </File>
+    <File Include="Views/Company/Details.cshtml">
+      <publishTime>12/22/2018 19:02:45</publishTime>
+    </File>
+    <File Include="Views/Company/Edit.cshtml">
+      <publishTime>12/22/2018 19:02:46</publishTime>
+    </File>
+    <File Include="Views/Company/Index.cshtml">
+      <publishTime>12/22/2018 19:02:44</publishTime>
+    </File>
+    <File Include="Views/Customer/Create.cshtml">
+      <publishTime>12/22/2018 19:14:23</publishTime>
+    </File>
+    <File Include="Views/Customer/Delete.cshtml">
+      <publishTime>12/22/2018 21:10:25</publishTime>
+    </File>
+    <File Include="Views/Customer/Details.cshtml">
+      <publishTime>12/22/2018 19:04:02</publishTime>
+    </File>
+    <File Include="Views/Customer/Edit.cshtml">
+      <publishTime>12/22/2018 19:13:32</publishTime>
+    </File>
+    <File Include="Views/Customer/Index.cshtml">
+      <publishTime>12/22/2018 19:04:02</publishTime>
+    </File>
+    <File Include="Views/Org/Index.cshtml">
+      <publishTime>12/22/2018 23:25:56</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/22/2018 18:59:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/22/2018 19:15:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

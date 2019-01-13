@@ -1,0 +1,62 @@
+﻿@model gogoday.Models.Customer
+@using System.Web.Optimization
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Customer</legend>
+
+        @Html.HiddenFor(model => model.CustomerId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Code)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Code)
+            @Html.ValidationMessageFor(model => model.Code)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreateTime)
+            @Html.ValidationMessageFor(model => model.CreateTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AgentCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AgentCode)
+            @Html.ValidationMessageFor(model => model.AgentCode)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

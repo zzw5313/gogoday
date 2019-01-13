@@ -1,0 +1,57 @@
+﻿@model gogoday.Models.Agent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Agent</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgentType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgentType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AgentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

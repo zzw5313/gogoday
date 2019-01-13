@@ -1,0 +1,43 @@
+﻿@model gogoday.Models.Customer
+@using System.Web.Optimization
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Customer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgentCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgentCode)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CustomerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

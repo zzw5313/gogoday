@@ -1,0 +1,24 @@
+﻿@using gogoday.Models
+@{
+    ViewBag.Title = "Index";
+    var helper = ViewBag.OrgHelper;
+    var otree = ViewBag.OrgHelper.GetOrgTree();
+    List<OrgNode> lstnode  = ViewBag.OrgHelper.OrgNodeList;
+}
+<p>编号</p>
+@foreach (OrgNode nd in lstnode.Where(A => A.ChildNodes.Count == 0))
+{
+    <li>@nd.ValuePath</li>
+}
+<p>名称</p>
+@foreach (OrgNode nd in lstnode.Where(A => A.ChildNodes.Count == 0))
+{
+    string[] arr = nd.ValuePath.Split('/');
+    string str = "";
+    foreach (string code in arr)
+    {
+        OrgNode nd2 = lstnode.Find(A => A.Code == code);
+        str += "/"+ nd2.Name;
+    }
+     <li>@str.Trim('/')</li>
+}

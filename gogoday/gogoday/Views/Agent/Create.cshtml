@@ -1,0 +1,77 @@
+﻿@model gogoday.Models.Agent
+@using System.Web.Optimization
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Agent</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Code)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Code)
+            @Html.ValidationMessageFor(model => model.Code)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PCode)
+            @Html.ValidationMessageFor(model => model.PCode)
+        </div>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AgentType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AgentType)
+            @Html.ValidationMessageFor(model => model.AgentType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerCount)
+            @Html.ValidationMessageFor(model => model.CustomerCount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreateTime)
+            @Html.ValidationMessageFor(model => model.CreateTime)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
